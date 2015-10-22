@@ -126,7 +126,11 @@ function SimulationRunner() {
   }
 
   this.map = this.getNewMap();
-  this.letters = this.getLetters("Paul Booth", 4, 3, "http://t.co/thepaulbooth").concat(this.getLetters("GitHub", 4, 5, "https://github.com/paulbooth")).concat(this.getLetters("thepaulbooth@gmail.com", 4, 7, "mailto:thepaulbooth@gmail.com")).concat(this.getLetters("LinkedIn", 18, 4, "https://www.linkedin.com/in/thepaulbooth"))
+  this.letters = this.getLetters("Paul Booth", 4, 3, "http://t.co/thepaulbooth")
+      .concat(this.getLetters("GitHub", 4, 5, "https://github.com/paulbooth"))
+      .concat(this.getLetters("thepaulbooth@gmail.com", 4, 7, "mailto:thepaulbooth@gmail.com"))
+      .concat(this.getLetters("LinkedIn", 18, 5, "https://www.linkedin.com/in/thepaulbooth"))
+      .concat(this.getLetters("R\u00E9sum\u00E9", 20, 3, "./static/Paul_Booth_Resume.pdf"))
 }
 
 $(window).ready(function() {
